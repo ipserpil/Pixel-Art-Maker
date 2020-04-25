@@ -8,7 +8,7 @@ var height = document.getElementById('inputHeight');
 // Table define
 var grid = document.getElementById('pixelCanvas');
 
-//Other variables declared at the beginning (use later)
+// Other variables declared at the beginning (use later)
 var rowsCount, row, cell;
 // Event listener for Submit button so that user can change table characteristics or reset grid to blank
 var submitButton= document.getElementById('sizePicker');
@@ -21,8 +21,8 @@ submitButton.addEventListener('submit', function(event) {
     makeGrid(width.value, height.value); // Call makeGrid()
 });
 
-//makeGrid function define
-// make rows, make columns, change color with event listener 
+// makeGrid function define
+// Make rows, make columns, change color with event listener 
 function makeGrid(width, height) {
     for (let x = 1; x <= height; x++) {
         row = grid.insertRow(-1);
